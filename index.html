@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/icon" href="assets/favicon_32x32.png" sizes="32x32">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+</head>
+
+<body>
+
+    <!--***********START OF HEADER **********-->
+    <header class="header-container stick">
+        <div class="container">
+            <div class="guide-button-box">
+                <span class="iconify hamburger" data-icon="ci:hamburger" data-inline="false"></span>
+            </div>
+            <div class="logo">
+                <img class="logo-img" src="assets/youtube_logo.webp">
+                <span class="country-code">IN</span>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit">
+                <span class="iconify search-btn" data-icon="ant-design:search-outlined" data-inline="false"></span>
+            </button>
+        </div>
+        <div class="user-d">
+            <button class="user-btn">
+                <span class="iconify" data-icon="bx:bxs-video-plus" data-inline="false"></span>
+            </button>
+            <button class="user-btn">
+                <span class="iconify" data-icon="gg:menu-grid-r" data-inline="false"></span>
+            </button>
+            <button class="user-btn">
+                <span class="iconify" data-icon="fa-solid:bell" data-inline="false"></span>
+            </button>
+            <button>
+                <span class="iconify user" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+            </button>
+        </div>
+    </header>
+
+    <!--**********END OF HEADER**********-->
+
+    <!--**********START OF SIDEBAR**********-->
+
+    <div class="sidebar">
+        <div class="sidebar-categories">
+            <div class="sidebar-category selected">
+                <span class="iconify user-icon selected-img" data-icon="ci:home-alt-fill" data-inline="false"></span>
+                <span>Home</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ic:baseline-explore" data-inline="false"></span>
+                <span>Explore</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ic:baseline-subscriptions" data-inline="false"></span>
+                <span>Subscriptions</span>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="sidebar-categories">
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ic:baseline-video-library" data-inline="false"></span>
+                <span>Library</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ic:baseline-history" data-inline="false"></span>
+                <span>History</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ant-design:play-square-outlined" data-inline="false"></span>
+                <span>Your videos</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ic:baseline-watch-later" data-inline="false"></span>
+                <span>Watch later</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="bx:bxs-like" data-inline="false"></span>
+                <span>Liked videos</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ic:outline-expand-more" data-inline="false"></span>
+                <span>Show more</span>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="subscription-categories">
+            <span class="head-text">
+                SUBSCRIPTIONS
+            </span>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+                <span>MrBeast</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+                <span>Vj Siddhu Vlogs</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+                <span>ICC</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+                <span>Irfan's View</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+                <span>Mrwhosetheboss</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+                <span>A2D Channel</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="carbon:user-avatar-filled" data-inline="false"></span>
+                <span>NZC</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify" data-icon="ic:outline-expand-more" data-inline="false"></span>
+                <span>Show 40 more</span>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="subscription-categories">
+            <span class="head-text">
+                MORE FROM YOUTUBE
+            </span>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ant-design:youtube-filled" data-inline="false"></span>
+                <span>YouTube Premium</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ic:sharp-local-movies" data-inline="false"></span>
+                <span>Movies</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="simple-icons:youtubegaming" data-inline="false"></span>
+                <span>Gaming</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="fluent:live-24-filled" data-inline="false"></span>
+                <span>Live</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="icon-park-outline:hanger-two" data-inline="false"></span>
+                <span>Fashion & Beauty</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ant-design:bulb-filled" data-inline="false"></span>
+                <span>Learing</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="icomoon-free:trophy" data-inline="false"></span>
+                <span>Sports</span>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="sidebar-categories">
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="fluent:settings-28-filled" data-inline="false"></span>
+                <span>Settings</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ci:flag-fill" data-inline="false"></span>
+                <span>Report history</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ci:help-circle" data-inline="false"></span>
+                <span>Help</span>
+            </div>
+            <div class="sidebar-category">
+                <span class="iconify user-icon" data-icon="ic:baseline-feedback" data-inline="false"></span>
+                <span>Send Feedback</span>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="sidebar-bottom-info">
+            <a href="/">About</a>
+            <a href="/">Press</a>
+            <a href="/">Copyright</a><br>
+            <a href="/">Contact us</a>
+            <a href="/">Creators</a><br>
+            <a href="/">Advertise</a>
+            <a href="/">Developers</a><br><br>
+            <a href="/">Terms</a>
+            <a href="/">Privacy</a>
+            <a href="/">Policy & Safety</a><br>
+            <a href="/">How YouTube works</a><br>
+            <a href="/">Test new features</a><br><br>
+            <span>© 2024 Google LLC</span>
+        </div>
+
+        <div class="sidebar-category-sml">
+            <span class="iconify user-icon selected-img" data-icon="ci:home-alt-fill" data-inline="false"></span>
+            <span>Home</span>
+        </div>
+        <div class="sidebar-category-sml">
+            <span class="iconify user-icon" data-icon="ic:baseline-explore" data-inline="false"></span>
+            <span>Explore</span>
+        </div>
+        <div class="sidebar-category-sml">
+            <span class="iconify user-icon" data-icon="ic:baseline-subscriptions" data-inline="false"></span>
+            <span>Subscriptions</span>
+        </div>
+        <div class="sidebar-category-sml">
+            <span class="iconify user-icon" data-icon="ic:baseline-video-library" data-inline="false"></span>
+            <span>Library</span>
+        </div>
+    </div>
+
+    <!--**********END OF SIDEBAR**********-->
+
+    <!--**********START OF HEADER NAVBAR**********-->
+
+    <div class="header-navbar">
+        <button class="navbar-element first active">
+            All
+        </button>
+        <button class="navbar-element">
+            Music
+        </button>
+        <button class="navbar-element">
+            Wildlife
+        </button>
+        <button class="navbar-element">
+            Education
+        </button>
+        <button class="navbar-element">
+            Recently Uploaded
+        </button>
+        <button class="navbar-element">
+            Live
+        </button>
+        <button class="navbar-element">
+            Tamil
+        </button>
+        <button class="navbar-element">
+            T-Series
+        </button>
+        <button class="navbar-element">
+            Cricket
+        </button>
+        <button class="navbar-element">
+            Sports
+        </button>
+        <button class="navbar-element">
+            Eating
+        </button>
+        <button class="navbar-element">
+            Laughter
+        </button>
+        <button class="navbar-element">
+            Music
+        </button>
+        <button class="navbar-element">
+            Wildlife
+        </button>
+        <button class="navbar-element">
+            Education
+        </button>
+        <button class="navbar-element">
+            Recently Uploaded
+        </button>
+        <button class="navbar-element">
+            Live
+        </button>
+        <button class="navbar-element">
+            Tamil
+        </button>
+    </div>
+
+    <!--**********END OF HEADER NAVBAR**********-->
+
+    <!--**********START OF BOTTOM NAVBAR**********-->
+
+    <div class="btm-nav">
+        <div>
+            <button class="btm-btn">
+                <span class="iconify user-icon selected-img" data-icon="ci:home-alt-fill" data-inline="false"></span>
+            </button>
+            <span>Home</span>
+        </div>
+        <div>
+            <button class="btm-btn">
+                <span class="iconify user-icon" data-icon="ic:round-local-fire-department" data-inline="false"></span>
+            </button>
+            <span>Trending</span>
+        </div>
+        <div>
+            <button class="btm-btn">
+                <span class="iconify user-icon" data-icon="ic:baseline-subscriptions" data-inline="false"></span>
+            </button>
+            <span>Subscriptions</span>
+        </div>
+        <div>
+            <button class="btm-btn">
+                <span class="iconify user-icon" data-icon="ic:baseline-video-library" data-inline="false"></span>
+            </button>
+            <span>Library</span>
+        </div>
+    </div>
+
+    <!--**********END OF BOTTOM NAVBAR**********-->
+
+    <!--**********START OF MAIN CONTENT**********-->
+
+    <div class="main-content">
+        <div class="videos">
+            <div class="videos-container">
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/24.jpg" alt="24" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>இதுலயெல்லாமா தோசை சுடுவாங்க😱😋</h3>
+                            <a href="https://youtu.be/1E-fbi6e0ts?si=M0O93oBMlF9Hdtnm">Vj Siddhu Vlogs</a>
+                            <span>1.4M views • 1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/9.jpg" alt="9" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>3rd T20 | English | Highlights | India Tour Of Sri Lanka | 30th July 2024</h3>
+                            <a href="https://youtu.be/4X00o7WHWRk?si=BTiRXcLkbDiLEQvb">Sony Sports Network</a>
+                            <span>2M views • 1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/22.jpg" alt="22" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Bahubali Set-அ பாத்துட்டோம்🥳🤩</h3>
+                            <a href="https://youtu.be/tO-uV2b1TpQ?si=iN7s7lI4VOLV9VXB">Vj Siddhu Vlogs</a>
+                            <span>2M views • 4 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/2.jpg" alt="2" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>How To Build Responsive Restaurant Website Using HTML CSS And JavaScript</h3>
+                            <a href="https://youtu.be/EO7g9GRvWD0?si=FwOvzpYKzIkWVp8C">Web Design Mastery</a>
+                            <span>2.8K views • 4 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/4.jpg" alt="4" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>₹30 Roadside Kaalan vs ₹327 Restaurant Kaalan | Ep-10 - Irfan's View</h3>
+                            <a href="https://youtu.be/s_rtH29_cTg?si=Wg3dr6ktbhcElqU1">Irfan's View</a>
+                            <span>529K views • 8 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/3.jpg" alt="3" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>PLAY VIDEO ON SCROLL - GSAP Scrolltrigger Elementor (No plugin) Tutorial</h3>
+                            <a href="https://youtu.be/s7n9vRFvmM0?si=mItZp9e_XXPzuoQf">Nicolai Palmkvist</a>
+                            <span>59K views • 9 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/16.jpg" alt="16" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>50 YouTubers Fight For $1,000,000</h3>
+                            <a href="https://youtu.be/4SNThp0YiU4?si=yJeqiKZKT0EF6AJ5">MrBeast</a>
+                            <span>206M views • 2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/21.jpg" alt="21" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Cooking Challenge vs MrBeast</h3>
+                            <a href="https://youtu.be/H0X4PZSFtak?si=VkvHqbMxkcHVTXKJ">Nick DiGiovanni</a>
+                            <span>10M views • 2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/23.jpg" alt="23" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>The Last Episode of Our Bike Trip🥹</h3>
+                            <a href="https://youtu.be/HhPsKvqiApM?si=8AvtK8YzqXQC4atH">Vj Siddhu Vlogs</a>
+                            <span>2.1M views • 2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/13.jpg" alt="13" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>The Epic Montage | T20 World Cup 2024 Final</h3>
+                            <a href="https://youtu.be/3yiWqnKl7lQ?si=bycl6uJW-0ZllXu5">ICC</a>
+                            <span>2.4M views • 3 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/14.jpg" alt="14" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Rohit Sharma's winning speech | ICC Men's T20 World Cup 2024</h3>
+                            <a href="https://youtu.be/5yliDXhJ4fs?si=iGHFMShbKN64kBtW">Star Sports</a>
+                            <span>1.7M views • 1 month ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/15.jpg" alt="15" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Player of the Match speech in ICC Men's T20 WC 2024 Final</h3>
+                            <a href="https://youtu.be/CDUbkFBHb5A?si=wOvkUFU5yrnxtalu">Star Sports</a>
+                            <span>828K views • 1 month ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/5.jpg" alt="5" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Driving Car With Apple Vision Pro - போலிசிடம் மாட்டாமல் தப்பியது எப்படி?</h3>
+                            <a href="https://youtu.be/xnsQTnir2tM?si=w0eoeiWkwFMS4GHk">A2D Channel</a>
+                            <span>598K views • 4 months ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/19.jpg" alt="19" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>I Bought My First Car……</h3>
+                            <a href="https://youtu.be/5j8V3wHw1ls?si=HIrkW4P2VN0VDKuU">IShowSpeed</a>
+                            <span>4.6M views • 4 months ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/18.jpg" alt="18" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>$1 vs $100,000,000 Car!</h3>
+                            <a href="https://youtu.be/KrLj6nc516A?si=kIX7FF3RJoykiKmw">MrBeast</a>
+                            <span>316M views • 10 months ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/17.jpg" alt="17" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Ages 1 - 100 Fight For $500,000</h3>
+                            <a href="https://youtu.be/FM7Z-Xq8Drc?si=DF7GLG6LUNJ5VElj">MrBeast</a>
+                            <span>383M views • 1 year ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/1.jpg" alt="1" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>YouTube Clone with React, Redux Toolkit, Typescript, Tailwind CSS and YouTube API v3
+                            </h3>
+                            <a href="https://youtu.be/I32ri7v3SYk?si=OL5lAIJ_QBfB-t1F">Kishan Sheth</a>
+                            <span>37K views • 1 year ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/7.jpg" alt="7" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Bumrah With The Bat! | 35 Runs In One Over Against Stuart Broad! | England v India 2022
+                            </h3>
+                            <a href="https://youtu.be/M3ygFVrfR6E?si=-E9ombVpjRa_VWBF">England & Wales Cricket Board</a>
+                            <span>46M views • 1 year ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/6.jpg" alt="6" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>வாத்து Coming ஒத்து.! | Pollachi Vlog | Fun Panrom Vlogs | Vj Siddhu, Settai Sheriff &
+                                Harshath</h3>
+                            <a href="https://youtu.be/7JknOSAPtso?si=M9urfO1-a6mrknLQ">Black Sheep</a>
+                            <span>1.2M views • 2 years ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/20.jpg" alt="20" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>The MrBeast MEGA-STUDIO Tour!</h3>
+                            <a href="https://youtu.be/lUzpK0tGFcE?si=gu-FACTRKQEtQguA">Mrwhosetheboss</a>
+                            <span>28M views • 2 years ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/8.jpg" alt="8" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>India claim stunning series win, end Australia's Gabba streak | Vodafone Test Series
+                                2020-21</h3>
+                            <a href="https://youtu.be/wY6UyatwVTA?si=ztryH4Tk4LMz-n2R">England & Wales Cricket Board</a>
+                            <span>79M views • 3 year ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/10.jpg" alt="10" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Sharma Stars In Thriller | SUPER OVER REPLAY | BLACKCAPS v India - 3rd T20, 2020</h3>
+                            <a href="https://youtu.be/PJutG613i7E?si=8gnDGq-_ZyU5AWYU">NZC</a>
+                            <span>93M views • 3 year ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/11.jpg" alt="11" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>Headingley Final Day HIGHLIGHTS! Incredible Ben Stokes Wins Match The Ashes Day 4 2019
+                            </h3>
+                            <a href="https://youtu.be/wamtTEVFDiA?si=JXgkY-RZ_o-ZQAP9">England & Wales Cricket Board</a>
+                            <span>18M views • 4 years ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video">
+                    <div class="video-thumbnail">
+                        <img src="assets/thumbnails/12.jpg" alt="12" />
+                    </div>
+
+                    <div class="video-details">
+                        <div class="author">
+                            <span class="iconify video-icon" data-icon="carbon:user-avatar-filled"
+                                data-inline="false"></span>
+                        </div>
+
+                        <div class="title">
+                            <h3>One Of The Greatest ODI Matches Ever | England v India NatWest Series Final 2002 - Full
+                                Highlights</h3>
+                            <a href="https://youtu.be/d5LIyNlq2KY?si=Zq5UHiDEwlj5L-Dk">England & Wales Cricket Board</a>
+                            <span>47M views • 6 years ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--**********END OF MAIN CONTENT**********-->
+</body>
+
+</html>
